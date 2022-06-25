@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+
+button{
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 13px 20px;
+    background: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+img{
+    padding-top: 40px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    width: 80%;
+    margin-bottom: 80px;
+}
+/* class selectors */
+
+.button_luxury {
+    color: hsl(179, 100%, 13%);
+}
+.button_luxury:hover{
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+.button_sedan {
+    color: hsl(31, 77%, 52%);
+}
+.button_sedan:hover{
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.button_suv {
+    color: hsl(184, 100%, 22%);
+}
+.button_suv:hover{
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.container{
+    align-items: center;
+    background:hsl(0, 0%, 95%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 12px 12px 0;
+    padding-left: 38px;
+}
+
+.sedan{
+    background: hsl(31, 77%, 52%);
+    border-radius: 12px 0 0 12px;
+    padding-left: 38px;
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%);
+    padding-left: 38px;
+}
+
+.wrapper{
+    display: flex;
+    width: 25%;
+}
+
+@media (max-width: 500px){
+    .container{
+        display: block;
+    }
+
+    .wrapper{
+        width:100%;
+    }
+
+    .sedan{
+        border-radius: 12px 12px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+
